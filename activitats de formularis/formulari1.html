@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari 1</title>
+</head>
+
+<style>
+    .container {
+        column-count: 2;
+        column-gap: 20px;
+    }
+</style>
+
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="2" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+
+              <li><form>
+                <form method="POST">
+                  <button class="btn btn-outline-success" type="submit" formaction="menu.html">Home</button>
+                </form> </li>
+
+              <li><form>
+                <form method="POST">
+                  <button class="btn btn-outline-success" type="submit" formaction="formulari.html">Formulari</button>
+                </form> </li>
+
+              <li><form>
+                <form method="POST">
+                  <button class="btn btn-outline-success" type="submit" formaction="temps.html">Temps</button>
+                </form></li>
+
+              <li><form>
+                <form method="POST">
+                  <button class="btn btn-outline-success" type="submit" formaction="heros.html">Participants</button>
+                </form></li>
+            </ul>
+      </header>
+
+ <div class="container">
+
+    <form>
+
+        <label for="fname">Name  </label><input type="text" id="fname" name="fname" placeholder="Cristopher"> <input type="text" id="lname" name="lname" placeholder="Singh"><br><br><br>
+        
+        <label for="lname">Email   </label><input type="text" id="Email" name="Email" placeholder="csingh@iesebre.com"><br><br>
+        
+        <label for="lname">Gender  </label><input type="radio" id="male" name="Gender" value="Male">
+        <label for="html">Male</label><input type="radio" id="female" name="Female" value="Female">
+        <label for="css">Female</label><br><br>
+
+        <label for="fname">Telèfon</label> <input type="number" id="telefon" name="telefon"><br><br>
+        
+        <label for="fname">Contacte d'emergencia </label><br>
+        <input type="number" id="fname" name="fname"><br><br>
+
+        <label for="parking">Requereixes parking?</label><br><br>
+
+        <input type="radio" id="si" name="parking" value="Si">
+        <label for="si">Si</label><input type="radio" id="no" name="parking" value="No">
+        <label for="no">No</label><br><br>
+
+
+        <label for="room">quina és la vostra preferència d'habitació</label><br><br>
+
+        <input type="radio" id="single" name="room" value="single">
+        <label for="single">habitació solitaria</label><br>
+
+        <input type="radio" id="share" name="room" value="share">
+        <label for="share">habitació compratida</label><br>
+
+        <input type="radio" id="Nroom" name="room" value="Nroom">
+        <label for="Nroom">sense habitació</label><br><br>
+
+        <label for="restrictions">tens restriccions alimentàries?</label><br><br>
+
+        <input type="radio" id="none" name="dietary" value="none">
+        <label for="none">None</label><br>
+
+        <input type="radio" id="vegetarian" name="dietary" value="vegetarian">
+        <label for="vegetarian">Vegetaria</label><br>
+
+        <input type="radio" id="gluten" name="dietary" value="gluten">
+        <label for="gluten"></label>al·lèrgia al gluten<br>
+
+        <input type="radio" id="lactose" name="dietary" value="lactose">
+        <label for="lactose"></label>al·lèrgia a la lactosa<br>
+
+        <input type="radio" id="nut" name="dietary" value="nut">
+        <label for="nut"></label>al·lèrgia als fruits secs<br>
+
+        <input type="radio" id="shellfish" name="dietary" value="shellfish">
+        <label for="shellfish"></label>al·lèrgia als mariscs<br><br>
+
+        <label for="activitats">A quines activitats assistiràs?</label><br><br>
+
+        <input type="radio" id="sopar" name="activities" value="sopar">
+        <label for="sopar"></label>sopar de gala de premis<br>
+
+        <input type="radio" id="dinner" name="activities" value="dinner">
+        <label for="dinner"></label>dinar<br>
+
+        <input type="radio" id="hall" name="activities" value="hall">
+        <label for="hall"></label>ajuntament<br><br>
+
+        <label for="list">vols veure la llista d'altres assistents i els seus perfils a l'aplicació oficial de l'esdeveniment?</label><br><br>
+
+        <input type="radio" id="si" name="list" value="Si">
+        <label for="si">Si  </label><input type="radio" id="no" name="list" value="No">
+        <label for="no">No</label><br><br><br>
+    
+
+    </form>
+  </div>   
+      
+</body>
+</html>

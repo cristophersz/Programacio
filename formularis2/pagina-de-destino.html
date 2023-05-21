@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció</title>
+</head>
+<body>
+    <section>
+        <h2>Inscripción</h2>
+        <p>Per a inscriurte, per favor completa el següent formulari:</p>
+        <form action="procesar-formulario.php" method="POST" enctype="multipart/form-data">
+            <label for="nombre">Nom:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+          
+            <label for="apellido">Cognom:</label>
+            <input type="text" id="apellido" name="apellido" required><br><br>
+          
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required><br><br>
+          
+            <label for="telefono">Teléfon:</label>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+          
+            <label for="email">Correu electronic:</label>
+            <input type="email" id="email" name="email" required><br><br>
+          
+            <label for="fecha-nacimiento">Data de naixement:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br><br>
+          
+            <label for="codigo-postal">CP:</label>
+            <input type="text" pattern="[0-9]{5}" id="codigo-postal" name="codigo-postal" required><br><br>
+          
+            <label for="direccion">Direcció:</label>
+            <input type="text" id="direccion" name="direccion" required><br><br>
+          
+            <label for="sexo">Sexe:</label>
+            <select id="sexo" name="sexo" required>
+              <option value="">Selecciona una opció</option>
+              <option value="Hombre">Home</option>
+              <option value="Mujer">Dona</option>
+              <option value="Otro">Otro</option>
+            </select><br><br>
+          
+            <label for="problemas-corazon">Ha tingut problemes del cor?</label>
+            <input type="radio" id="problemas-corazon-si" name="problemas-corazon" value="Sí">
+            <label for="problemas-corazon-si">Si</label>
+            <input type="radio" id="problemas-corazon-no" name="problemas-corazon" value="No">
+            <label for="problemas-corazon-no">No</label><br><br>
+          
+            <label for="alergia">Té al·lèrgia?</label>
+            <input type="radio" id="alergia-si" name="alergia" value="Sí">
+            <label for="alergia-si">Si</label>
+            <input type="radio" id="alergia-no" name="alergia" value="No">
+            <label for="alergia-no">No</label><br><br>
+          
+            <label for="ruta">A quina de les dos opcion te vols apuntar?</label>
+            <select id="ruta" name="ruta" required>
+              <option value="">Selecciona una opció</option>
+              <option value="Ruta 1">Ruta 1 (15km)</option>
+              <option value="Ruta 2">Ruta 2 (25km)</option>
+            </select><br><br>
+          
+            <label for="puntuacion">Puntuació sobre les rutes:</label>
+            <input type="range" id="puntuacion" name="puntuacion" min="0" max="10"><br><br>
+          
+            <label for="postre">Preferencia sobre els postres a elegir:</label>
+            <input type="text" id="postre" name="postre" required>
+          
+          
+</html>
