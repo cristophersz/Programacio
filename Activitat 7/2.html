@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 2</title>
+</head>
+
+<style>
+
+    .animated_div{
+
+        width: 175px;
+        height: 50px;
+        background: #d191f7;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .animated_div:hover {
+        animation: transformacion 3s infinite;
+      }
+      
+      @keyframes transformacion {
+        0% {
+          text-transform: uppercase;
+          transform: translateX(0);
+        }
+        50% {
+          text-transform: lowercase;
+          transform: translateX(50px);
+        }
+        100% {
+          text-transform: uppercase;
+          transform: translateX(0);
+        }
+      }
+
+
+      .animated1_div{
+
+        width: 175px;
+        height: 50px;
+        background: #60d6eb;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+      }
+
+      .animated1_div:hover {
+
+        transform: rotate(180deg);
+        transition-duration: 2s; 
+        }
+
+      .animated2_div:hover {
+        transform: matrix(2, -0.3, 0, 0.5, 0, 0);
+        transition-duration: 2s; 
+      }
+
+      .animated2_div{
+
+        width: 175px;
+        height: 50px;
+        background: #92f70e;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+
+      }
+
+      .animated3_div:hover {
+        transform: skewY(20deg);
+        transition-duration: 2s; 
+      }
+
+      .animated3_div{
+
+        width: 175px;
+        height: 50px;
+        background: #ff547f;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+
+      }
+
+      .animated4_div:hover {
+        transition-duration: 2s; 
+        opacity:1;
+        background: #000000;
+        color:#ffffff;
+      }
+
+      .animated4_div{
+
+        width: 175px;
+        height: 50px;
+        background: #ff7300;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+
+      }
+
+
+
+</style>
+
+<body>
+
+    <div class="animated_div">opció número 1</div>
+    <div class="animated1_div">opció número 2</div>
+    <div class="animated2_div">opció número 3</div>
+    <div class="animated3_div">opció número 4</div>
+    <div class="animated4_div">opció número 5</div>
+    
+</body>
+</html>
